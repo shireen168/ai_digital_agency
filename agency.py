@@ -91,10 +91,10 @@ def init_session_state() -> None:
 
 
 def main() -> None:
-    st.set_page_config(page_title="AI Servicing Agency", layout="wide")
+    st.set_page_config(page_title="AI Digital Agency", layout="wide")
     init_session_state()
 
-    st.title("🚀 AI Servicing Agency")
+    st.title("🚀 AI Digital Agency")
 
     # API Configuration
     with st.sidebar:
@@ -286,7 +286,7 @@ def main() -> None:
                     {"role": "user", "content": str(project_info)}
                 )
                 # Create tabs and run analysis
-                with st.spinner("AI Servicing Agency is analyzing your project..."):
+                with st.spinner("AI Digital Agency is analyzing your project..."):
                     try:
                         # Get analysis from each agent using agency.get_completion()
                         ceo_response = agency.get_completion(

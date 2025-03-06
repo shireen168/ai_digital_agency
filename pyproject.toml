@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "ai-servicing-agent"
+name = "ai-digital-agency"
 version = "0.1.0"
-description = ""
+description = "A streamlined AI-powered digital agency platform that leverages specialized AI agents"
 authors = ["Shireen <shireenlowyk@gmail.com>"]
 readme = "README.md"
 packages = [{include = "."}]
