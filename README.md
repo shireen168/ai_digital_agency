@@ -1,135 +1,88 @@
 # 👨‍💼 AI Services Agency
 
-A comprehensive AI-powered agency platform that leverages multiple specialized AI agents to deliver end-to-end solutions for businesses.
+A streamlined AI-powered agency platform that leverages specialized AI agents to analyze and plan projects effectively.
 
 ## Features
 
-### Five Specialized AI Agents
+### Two Specialized AI Agents
 
-#### 1. CEO Agent 👔
-- Strategic leadership and vision
-- Final decision making
-- Resource allocation
-- Business strategy development
-- Risk assessment and management
+#### 1. Project Director (CEO) Agent 👔
+- Strategic project analysis
+- Requirement evaluation
+- Budget feasibility assessment
+- Project complexity assessment
+- Timeline estimation
 
-#### 2. CTO Agent 🔧
+#### 2. Technical Architect (CTO) Agent 🔧
 - Technical architecture design
 - Technology stack recommendations
-- Feasibility assessment
+- Scalability assessment
 - Infrastructure planning
-- Security considerations
-
-#### 3. Product Manager Agent 📊
-- Product strategy development
-- Feature prioritization
-- Market analysis
-- User experience optimization
-- Roadmap planning
-
-#### 4. Developer Agent 💻
-- Technical implementation guidance
-- Code architecture recommendations
-- Best practices and standards
-- Performance optimization
-- Technical documentation
-
-#### 5. Client Success Agent 🤝
-- Marketing strategy development
-- Client relationship management
-- Performance tracking
-- ROI optimization
-- Growth recommendations
+- Technical specifications
 
 ### Custom Tools 🛠️
 
-- **Project Assessment**: Analyze requirements and generate comprehensive project plans
-- **Technical Evaluation**: Assess technical feasibility and provide architecture recommendations
-- **Market Analysis**: Research market trends and competitive landscape
-- **Implementation Planning**: Create detailed development roadmaps
-- **Performance Tracking**: Monitor KPIs and generate performance reports
+- **Project Assessment**: Analyze project requirements and generate feasibility reports
+- **Technical Specification**: Create detailed technical architecture and implementation plans
 
-### 🔄 Asynchronous Communication
+### 🔄 Agent Communication
 
-The agency operates through asynchronous communication between agents:
-1. CEO Agent coordinates overall strategy
-2. CTO Agent validates technical decisions
-3. Product Manager Agent defines features and priorities
-4. Developer Agent provides implementation details
-5. Client Success Agent ensures client satisfaction
+The agency operates through coordinated communication between agents:
+1. Project Director analyzes project requirements and feasibility
+2. Technical Architect creates detailed technical specifications based on the analysis
 
 ## Setup
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd ai_services_agency
+git clone https://github.com/shireen168/ai_servicing_agent.git
+cd ai_servicing_agent
 ```
 
-2. Install dependencies:
+2. Install dependencies using Poetry:
 ```bash
-pip install -r requirements.txt
+poetry install
 ```
 
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Add your API keys:
-# - OPENAI_API_KEY
-# - GOOGLE_APPLICATION_CREDENTIALS
-```
+3. Set up your OpenAI API key:
+- You'll be prompted to enter your API key in the application
+- Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys)
 
-4. Run with phidata:
+4. Run the application:
 ```bash
-phi start
-```
-
-Or run directly with Streamlit:
-```bash
-streamlit run app.py
+poetry run streamlit run agency.py
 ```
 
 ## Usage
 
 1. Project Initiation:
-   - Submit project requirements
-   - Define objectives and constraints
-   - Set budget and timeline
+   - Enter your OpenAI API key
+   - Submit project details including:
+     - Project name and description
+     - Project type
+     - Budget range
+     - Timeline expectations
+     - Technical requirements
+     - Special considerations
 
-2. Agent Collaboration:
-   - CEO Agent reviews and approves strategy
-   - CTO Agent assesses technical aspects
-   - Product Manager Agent creates product roadmap
-   - Developer Agent plans implementation
-   - Client Success Agent ensures alignment with goals
+2. Agent Analysis:
+   - Project Director evaluates project feasibility
+   - Technical Architect creates technical specifications
+   - Receive comprehensive analysis and recommendations
 
 3. Deliverables:
-   - Comprehensive project strategy
-   - Technical architecture document
-   - Product specifications
-   - Implementation plan
-   - Marketing and growth strategy
+   - Project feasibility analysis
+   - Technical architecture specifications
+   - Implementation recommendations
 
 ## Project Structure
 
 ```
-ai_services_agency/
-├── app.py                 # Main Streamlit application
-├── workspace.yaml         # Phidata workspace configuration
-├── requirements.txt       # Python dependencies
-├── agents/
-│   ├── ceo_agent.py      # Strategic leadership agent
-│   ├── cto_agent.py      # Technical architecture agent
-│   ├── pm_agent.py       # Product management agent
-│   ├── dev_agent.py      # Developer agent
-│   └── cs_agent.py       # Client success agent
-├── utils/
-│   ├── project_analyzer.py    # Project analysis tools
-│   └── performance_tracker.py # Performance monitoring tools
-├── data/
-│   ├── templates/        # Project templates
-│   └── examples/         # Example projects
-└── docs/                 # Documentation
+ai_servicing_agent/
+├── agency.py             # Main Streamlit application with agent implementations
+├── pyproject.toml        # Poetry project configuration
+├── poetry.lock          # Poetry dependency lock file
+└── settings.json        # Agent configuration settings
 ```
 
 ## Contributing
@@ -142,4 +95,4 @@ ai_services_agency/
 
 ## License
 
-[Specify License]
+MIT License
