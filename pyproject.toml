@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ai-servicing-agent"
+version = "0.1.0"
+description = ""
+authors = ["Shireen <shireenlowyk@gmail.com>"]
+readme = "README.md"
+packages = [{include = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.41.1"
+pydantic = "^2.8.2"
+agency-swarm = "^0.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
